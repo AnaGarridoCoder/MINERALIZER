@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MINERALIZER API", "MINERALIZER\MINERALIZER API.csproj", "{E7FCE87A-29EB-4A14-B134-664373F7F615}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{025CF9DE-A53C-4D41-AC99-92DD6D8BE234}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{A28CD16A-4672-4E15-8D4B-8EAB2BA47F57}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{182520CD-FD22-4B79-9099-4F833CCB4669}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7FCE87A-29EB-4A14-B134-664373F7F615}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7FCE87A-29EB-4A14-B134-664373F7F615}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7FCE87A-29EB-4A14-B134-664373F7F615}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7FCE87A-29EB-4A14-B134-664373F7F615}.Release|Any CPU.Build.0 = Release|Any CPU
+		{025CF9DE-A53C-4D41-AC99-92DD6D8BE234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{025CF9DE-A53C-4D41-AC99-92DD6D8BE234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{025CF9DE-A53C-4D41-AC99-92DD6D8BE234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{025CF9DE-A53C-4D41-AC99-92DD6D8BE234}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A28CD16A-4672-4E15-8D4B-8EAB2BA47F57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A28CD16A-4672-4E15-8D4B-8EAB2BA47F57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A28CD16A-4672-4E15-8D4B-8EAB2BA47F57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A28CD16A-4672-4E15-8D4B-8EAB2BA47F57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{182520CD-FD22-4B79-9099-4F833CCB4669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{182520CD-FD22-4B79-9099-4F833CCB4669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{182520CD-FD22-4B79-9099-4F833CCB4669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{182520CD-FD22-4B79-9099-4F833CCB4669}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75812BE5-C08B-495A-BF0D-E9E5D5A19F17}
+	EndGlobalSection
+EndGlobal
