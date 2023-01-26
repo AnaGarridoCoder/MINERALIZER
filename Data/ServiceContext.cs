@@ -1,6 +1,7 @@
 ﻿using Entities.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
+using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -16,6 +17,7 @@ namespace Data
         public ServiceContext(DbContextOptions<ServiceContext> options) : base(options) { }
         public DbSet<MineralItem> Minerals { get; set; }
         public DbSet<UserItem> Users { get; set; }
+        public DbSet<Rol> Clients { get; set; } 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<MineralItem>(entity => {
@@ -23,6 +25,10 @@ namespace Data
             });
             builder.Entity<UserItem>(entity => {
                 entity.ToTable("Users");
+            });
+            builder.Entity<Rol>(entity =>
+            {
+                entity.ToTable("Clients");
             });
         }
     }

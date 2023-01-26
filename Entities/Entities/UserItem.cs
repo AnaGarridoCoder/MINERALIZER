@@ -19,10 +19,8 @@ namespace Entities.Entities
         public DateTime InsertDate { get; set; }
         public DateTime UpdateDate { get; set; }
         public bool IsActive { get; set; }  
-        public int IdRol { get; set; }  
-
+        public int IdRol { get; set; } 
         private string Password { get; set; }
         private string EncryptedPassword { get; set; }  
-        public string ExampleGitSasasa { get; set; }
     }
 }
