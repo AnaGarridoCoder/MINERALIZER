@@ -17,9 +17,6 @@ namespace MINERALIZER_API.Controllers
         }
 
         [HttpPost(Name = "InsertMineral")]
-        public int Post([FromBody] MineralItem mineralItem)
-        {
-            return _mineralService.InsertMineral(mineralItem);
-        }
+        public int Post([FromBody] MineralItem mineralItem) => _mineralService.InsertMineral(mineralItem);
     }
 }

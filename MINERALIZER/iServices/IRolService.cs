@@ -2,8 +2,8 @@
 
 namespace MINERALIZER_API.iServices
 {
-    public interface IUserService
+    public interface IRolService
     {
-        int InsertUser(UserItem userItem);
+        int InsertRol(RolItem rolitem);
     }
 }

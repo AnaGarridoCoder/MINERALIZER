@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Entities.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,7 @@ namespace Logic.ILogic
 {
     public interface IRolLogic
     {
+        void InsertRol(RolItem rol);
+        void InsertRolItem(RolItem rolItem);
     }
 }

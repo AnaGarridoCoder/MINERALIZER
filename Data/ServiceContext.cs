@@ -17,7 +17,7 @@ namespace Data
         public ServiceContext(DbContextOptions<ServiceContext> options) : base(options) { }
         public DbSet<MineralItem> Minerals { get; set; }
         public DbSet<UserItem> Users { get; set; }
-        public DbSet<Rol> Clients { get; set; } 
+        public DbSet<RolItem> Clients { get; set; } 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<MineralItem>(entity => {
@@ -26,9 +26,9 @@ namespace Data
             builder.Entity<UserItem>(entity => {
                 entity.ToTable("Users");
             });
-            builder.Entity<Rol>(entity =>
+            builder.Entity<RolItem>(entity =>
             {
-                entity.ToTable("Clients");
+                entity.ToTable("Rol");
             });
         }
     }

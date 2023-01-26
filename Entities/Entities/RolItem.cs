@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
-    public class Rol : UserItem
+    public class RolItem : UserItem
 
     {
         public int Id { get; set; }
