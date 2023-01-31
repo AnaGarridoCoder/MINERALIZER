@@ -15,7 +15,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IMineralLogic, MineralLogic>();
-builder.Services.AddScoped<IMineralLogic, MineralLogic>();
+builder.Services.AddScoped<IRolLogic, RolLogic>();
+builder.Services.AddScoped<IRolService, RolService>();
 
 builder.Services.AddDbContext<ServiceContext>(
         options => options.UseSqlServer("name=ConnectionStrings:ServiceContext"));
