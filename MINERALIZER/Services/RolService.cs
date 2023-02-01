@@ -13,7 +13,7 @@ namespace MINERALIZER_API.Services
         }
         public int InsertRol(RolItem rolItem)
         {
-            _rolLogic.InsertRolItem(rolItem);
+            _rolLogic.InsertRol(rolItem);
             return rolItem.Id;
         }
     }

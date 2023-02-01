@@ -15,16 +15,17 @@ namespace Data
     public class ServiceContext : DbContext
     {
         public ServiceContext(DbContextOptions<ServiceContext> options) : base(options) { }
-        public DbSet<MineralItem> Minerals { get; set; }
-        public DbSet<UserItem> Users { get; set; }
-        public DbSet<RolItem> Clients { get; set; } 
+        public DbSet<MineralItem> Mineral { get; set; }
+        public DbSet<OrderItem> Order { get; set; }
+        public DbSet<RolItem> Rol { get; set; } 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<MineralItem>(entity => {
-                entity.ToTable("Minerals");
+                entity.ToTable("Mineral");
             });
-            builder.Entity<UserItem>(entity => {
-                entity.ToTable("Users");
+
+            builder.Entity<OrderItem>(entity => {
+                entity.ToTable("Order");
             });
             builder.Entity<RolItem>(entity =>
             {
@@ -32,6 +33,7 @@ namespace Data
             });
         }
     }
+
     public class ServiceContextFactory : IDesignTimeDbContextFactory<ServiceContext>
     {
         public ServiceContext CreateDbContext(string[] args)

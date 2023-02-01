@@ -10,12 +10,14 @@ using System.Threading.Tasks;
 
 namespace Logic.Logic
 {
-    public class MineralLogic : BaseContextLogic, IMineralLogic
+    public class RolLogic : BaseContextLogic, IRolLogic
     {
-        public MineralLogic(ServiceContext serviceContext) : base(serviceContext) { }
-        public void InsertMineralItem(MineralItem mineralItem)
+        public RolLogic(ServiceContext serviceContext) : base(serviceContext) { }
+
+ 
+        public void InsertRol(RolItem rolItem)
         {
-            _serviceContext.Mineral.Add(mineralItem);
+            _serviceContext.Rol.Add(rolItem);
             _serviceContext.SaveChanges();
         }
     }

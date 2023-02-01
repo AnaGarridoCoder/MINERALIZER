@@ -2,8 +2,8 @@
 
 namespace MINERALIZER_API.iServices
 {
-    public interface IUserService
+    public interface IOrderService
     {
-        int InsertUser(UserItem userItem);
+        int InsertOrder(OrderItem userItem);
     }
 }

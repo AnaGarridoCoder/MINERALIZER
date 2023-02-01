@@ -10,6 +10,5 @@ namespace Logic.ILogic
     public interface IRolLogic
     {
         void InsertRol(RolItem rol);
-        void InsertRolItem(RolItem rolItem);
     }
 }

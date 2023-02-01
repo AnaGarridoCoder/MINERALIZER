@@ -6,16 +6,15 @@ using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
-    public class RolItem : UserItem
+    public class RolItem 
 
     {
         public int Id { get; set; }
-        public Guid IdWeb { get; set; }
-        public string Admin { get; set; }
-        public string Client { get; set; }
-        public string Support { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public DateTime InsertDate { get; set; }
+        public DateTime UpdateDate { get; set; }
         public bool IsActive { get; set; }
-        public bool IsPublic { get; set; }
 
     }
 }

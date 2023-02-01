@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,21 +7,20 @@ using System.Threading.Tasks;
 
 namespace Entities.Entities
 {
-    public class UserItem
+    public class OrderItem
     {
-        public UserItem()
+        public OrderItem()
         {
             IsActive = true;
         }
 
         public int Id { get; set; } 
         public Guid IdWeb { get; set; } 
-        public string UserName { get; set; }    
+        public int NumberItems { get; set; }
+        public int OrderNumber { get; set; }    
         public DateTime InsertDate { get; set; }
-        public DateTime UpdateDate { get; set; }
+        public DateTime UpdateDate { get; set; }  
         public bool IsActive { get; set; }  
-        public int IdRol { get; set; } 
-        private string Password { get; set; }
-        private string EncryptedPassword { get; set; }  
+      
     }
 }

@@ -8,11 +8,9 @@ namespace MINERALIZER_API.Controllers
     [Route("[controller]")]
     public class MineralController : ControllerBase
     {
-        private readonly ILogger<MineralController> _logger;
         private readonly IMineralService _mineralService;
-        public MineralController(ILogger<MineralController> logger, IMineralService mineralService)
+        public MineralController(IMineralService mineralService)
         {
-            _logger = logger;
             _mineralService = mineralService;
         }
 

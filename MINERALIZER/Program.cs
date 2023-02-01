@@ -8,18 +8,22 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddControllers();
 
+builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IMineralLogic, MineralLogic>();
-builder.Services.AddScoped<IRolLogic, RolLogic>();
+builder.Services.AddScoped<IMineralService, MineralService>();
+builder.Services.AddScoped<IOrderService, OrderService>();
 builder.Services.AddScoped<IRolService, RolService>();
 
+builder.Services.AddScoped<IMineralLogic, MineralLogic>();
+builder.Services.AddScoped<IOrderLogic, OrderLogic>();
+builder.Services.AddScoped<IRolLogic, RolLogic>();
+
 builder.Services.AddDbContext<ServiceContext>(
-        options => options.UseSqlServer("name=ConnectionStrings:ServiceContext"));
+    options => options.UseSqlServer("name=ConnectionString:ServiceContext"));
 
 var app = builder.Build();
 

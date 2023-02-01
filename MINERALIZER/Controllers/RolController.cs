@@ -11,12 +11,9 @@ namespace MINERALIZER_API.Controllers
     [Route("[controller]")]
     public class RolController : ControllerBase
     {
-        private readonly ILogger<RolController> _logger;
-        //private IRolService _rolService;
         private readonly IRolService _rolService;
-        public RolController(ILogger<RolController> logger, IRolService rolService)
+        public RolController(IRolService rolService)
         {
-            _logger = logger;
             _rolService = rolService;
         }
 
