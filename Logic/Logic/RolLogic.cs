@@ -17,8 +17,8 @@ namespace Logic.Logic
  
         public void InsertRol(RolItem rolItem)
         {
-            _serviceContext.Rol.Add(rolItem);
-            _serviceContext.SaveChanges();
+            //_serviceContext.Rol.Add(rolItem);
+            //_serviceContext.SaveChanges();
         }
     }
 }

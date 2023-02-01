@@ -23,7 +23,7 @@ builder.Services.AddScoped<IOrderLogic, OrderLogic>();
 builder.Services.AddScoped<IRolLogic, RolLogic>();
 
 builder.Services.AddDbContext<ServiceContext>(
-    options => options.UseSqlServer("name=ConnectionString:ServiceContext"));
+    options => options.UseSqlServer("name=ConnectionStrings:ServiceContext"));
 
 var app = builder.Build();
 

@@ -16,23 +16,23 @@ namespace Data
     {
         public ServiceContext(DbContextOptions<ServiceContext> options) : base(options) { }
         public DbSet<MineralItem> Mineral { get; set; }
-        public DbSet<OrderItem> Order { get; set; }
-        public DbSet<RolItem> Rol { get; set; } 
+        //public DbSet<OrderItem> Order { get; set; }
+        //public DbSet<RolItem> Rol { get; set; } 
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<MineralItem>(entity => {
                 entity.ToTable("Mineral");
             });
 
-            builder.Entity<OrderItem>(entity => {
-                entity.ToTable("Order");
-            });
-            builder.Entity<RolItem>(entity =>
-            {
-                entity.ToTable("Rol");
-            });
+            //builder.Entity<OrderItem>(entity => {
+                //entity.ToTable("Order");
+            //});
+            //builder.Entity<RolItem>(entity =>
+            //{
+                //entity.ToTable("Rol");
+            //});
+            }
         }
-    }
 
     public class ServiceContextFactory : IDesignTimeDbContextFactory<ServiceContext>
     {
