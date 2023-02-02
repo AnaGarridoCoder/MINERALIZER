@@ -4,6 +4,12 @@ namespace MINERALIZER_API.iServices
 {
     public interface IMineralService
     {
-        int InsertMineral(MineralItem mineralItem);
+        int InsertMineralItem(MineralItem mineralItem);
+
+        void DeleteMineralItem(int Id);
+
+        void UpdateMineralItem(MineralItem mineralItem);
+
+        List<MineralItem> GetAllMineralItems();
     }
 }

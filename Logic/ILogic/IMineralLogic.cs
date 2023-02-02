@@ -9,6 +9,9 @@ namespace Logic.ILogic
 {
     public interface IMineralLogic
     {
-        void InsertMineralItem(MineralItem mineralItem);
+        int InsertMineralItem(MineralItem mineralItem);
+        void DeleteMineralItem(int Id);
+        void UpdateMineralItem(MineralItem mineralItem);
+        List<MineralItem> GetAllMineralItems();
     }
 }

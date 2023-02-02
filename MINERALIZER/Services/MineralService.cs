@@ -11,10 +11,24 @@ namespace MINERALIZER_API.Services
         {
             _mineralLogic = mineralLogic;
         }
-        public int InsertMineral (MineralItem mineralItem)
+        public int InsertMineralItem(MineralItem mineralItem)
         {
             _mineralLogic.InsertMineralItem(mineralItem);
             return mineralItem.Id;
+        }
+        public void DeleteMineralItem(int Id)
+        {
+            _mineralLogic.DeleteMineralItem(Id);
+        }
+
+        public void UpdateMineralItem(MineralItem mineralItem)
+        {
+            _mineralLogic.UpdateMineralItem(mineralItem);
+        }
+
+        public List<MineralItem> GetAllMineralItems()
+        {
+            return _mineralLogic.GetAllMineralItems();
         }
     }
 }
